@@ -94,7 +94,7 @@ You can stop collecting the trace by pressing <kbd>Enter</kbd> or <kbd>Ctrl</kbd
 
 ## Viewing the trace captured from dotnet-trace
 
-On Windows, `.nettrace` files can be viewed on PerfView (https://github.com/microsoft/perfview) for analysis, just like traces collected with ETW or LTTng. For traces collected on Linux, you can either move the trace to a Windows machine to be viewed on PerfView.
+On Windows, `.nettrace` files can be viewed on PerfView (https://github.com/microsoft/perfview) or WPA (Windows Performance Analyzer) (https://github.com/microsoft/Microsoft-Performance-Tools-Linux-Android) for analysis, just like traces collected with ETW or LTTng. For traces collected on Linux, you can either move the trace to a Windows machine to be viewed on PerfView.
 
 If you would rather view the trace on a Linux machine, you can do this by changing the output format of `dotnet-trace` to `speedscope`. You can change the output file format using the `-f|--format` option - `-f speedscope` will make `dotnet-trace` to produce a speedscope file. You can currently choose between `nettrace` (the default option) and `speedscope`. Speedscope files can be opened at https://www.speedscope.app.
 
